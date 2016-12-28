@@ -2643,6 +2643,7 @@ DUK_LOCAL duk_bool_t duk__json_stringify_fast_value(duk_json_enc_ctx *js_ctx, du
 		}
 #endif
 		/* Could implement a fast path, but abort fast path for now. */
+		/* FIXME: implement fast path */
 		DUK_DD(DUK_DDPRINT("value is a plain buffer and serializing as plain JSON, abort fast path"));
 		goto abort_fastpath;
 	}
