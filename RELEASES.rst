@@ -2369,5 +2369,10 @@ Planned
 2.1.0 (XXXX-XX-XX)
 ------------------
 
+* Add a "global" property to the global object to provide easy access to the
+  global object itself without needing idioms like
+  "new Function('return this')()"; implemented based on
+  https://github.com/tc39/proposal-global (GH-1259, GH-1260)
+
 3.0.0 (XXXX-XX-XX)
 ------------------
